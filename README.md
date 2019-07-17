@@ -19,13 +19,38 @@ you can effectively use git.
 
 #### Install git and make a github account.
 
-do it. 
+do it.
 
 1. open the windows command line. 
-	2. in win10 you can type in sequence: StartButton + 'cmd' + Enter
+	2. in win10 you can type in sequence: StartButton -> 'cmd' -> Enter
 2. type 'git' and hit enter
 3. you should see a git specific help text. If you do not figure out
 what is wrong via googling
+
+#### create a directory
+
+We want a place to hold our python programs we are going to write.
+Lets make a folder on the commandline because it is good to know how
+to do.
+
+Windows has some specific commands for navigating folders (directories).
+
+* cd - show the current directory
+* cd `<directory>` - change directory to the provided directory
+* dir - show a list of the directories in the current directory
+* mkdir `<directory>` - create an empty directory with the given name
+
+We want to navigate to 'Documents' and create a folder 'python' it
+will probably look something like this:
+```bash
+dir 
+cd Documents
+mkdir python
+cd python
+```
+ 
+we should now be in a python directory inside documents. This is
+where we will put the git repo.
 
 #### Cloning this repository
 
@@ -35,16 +60,21 @@ latest versions of the files stored here. This is called a
 well as the history of revisions that the files went through to
 to get there latest forms.
 
-##### 
-We need to navigate to our git repository. Windows has some 
-commands for navigating through folders aka directories.
+on the main page of this repository on github.com there is a button
+'clone or download'. click this and copy the url that comes up.
 
-cd - show the current directory
-dir - list all the directories
-cd <directory-name> - change to the directory with the given 
-	name
+In the terminal in the python directory that we created run
+git clone `<url>`
+to paste the url into the terminal you can hit shift+insert
 
-You cloned
+doing 
+```bash
+dir
+```
+should show the newly cloned repository. We did our first git thing
+yay.
+
+
 ### Anaconda/Python
 
 We setting up a python environment and installing packages to that 
@@ -91,4 +121,9 @@ per line in 'requirements.txt' in this repository.
 The command to install all the packages:
 ```bash
 pip install -r requirements.txt
+```
+
+now run this to see if everything worked:
+```bash
+python hi.py
 ```
