@@ -22,7 +22,7 @@ you can effectively use git.
 do it.
 
 1. open the windows command line. 
-	2. in win10 you can type in sequence: StartButton -> 'cmd' -> Enter
+	* in win10 you can type in sequence: StartButton -> 'cmd' -> Enter
 2. type 'git' and hit enter
 3. you should see a git specific help text. If you do not figure out
 what is wrong via googling
